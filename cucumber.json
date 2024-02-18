@@ -1,0 +1,191 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Validation of positive response code for Get Animals from the application",
+        "description": "",
+        "id": "getting-animals-from-the-get-api;validation-of-positive-response-code-for-get-animals-from-the-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4993346600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "i am an authenticated user",
+            "match": {
+              "location": "Animals.i_am_an_authenticated_user()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1597637900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "i hit the get animals api url",
+            "match": {
+              "location": "Animals.iHitTheGetAnimalsApiUrl()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10124900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "i get 200 as the response code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 6
+                }
+              ],
+              "location": "Animals.iGetAsTheResponseCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Validation of positive response body for Get Animals from the application",
+        "description": "",
+        "id": "getting-animals-from-the-get-api;validation-of-positive-response-body-for-get-animals-from-the-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1126746700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i am an authenticated user",
+            "match": {
+              "location": "Animals.i_am_an_authenticated_user()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1063315200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i hit the get animals api url",
+            "match": {
+              "location": "Animals.iHitTheGetAnimalsApiUrl()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 112900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i get animals in the response body of the api",
+            "match": {
+              "location": "Animals.iGetAnimalsInTheResponseBodyOfTheApi()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Validation of negative response code for Get Animals from the application",
+        "description": "",
+        "id": "getting-animals-from-the-get-api;validation-of-negative-response-code-for-get-animals-from-the-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 997690300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "i am an unauthenticated user",
+            "match": {
+              "location": "Animals.iAmAnUnauthenticatedUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 300400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "i get 400 as the response code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 6
+                }
+              ],
+              "location": "Animals.iGetAsTheResponseCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Validation of negative response body for Get Animals from the application",
+        "description": "",
+        "id": "getting-animals-from-the-get-api;validation-of-negative-response-body-for-get-animals-from-the-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 894952100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "i hit the get animals api url without access token",
+            "match": {
+              "location": "Animals.iDoNotGetAnimalsInTheResponseOfTheApi()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 159600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "i get 401 as the response code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 6
+                }
+              ],
+              "location": "Animals.iGetAsTheResponseCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Getting animals from the get Api",
+    "description": "",
+    "id": "getting-animals-from-the-get-api",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/GetAnimals.feature",
+    "tags": []
+  }
+]
